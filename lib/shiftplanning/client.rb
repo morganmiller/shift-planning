@@ -27,14 +27,14 @@ module ShiftPlanning
       request("DELETE", api_module, data)
     end
 
-    #Time-saving api requests
     def shifts(data = {})
       request("GET", "schedule.shifts", data)
     end
 
   private
     def request(method, api_module, data = {})
-      response(request_options(method, api_module, data))
+      result = response(request_options(method, api_module, data))
+      raise ShiftPlanning::ResponseError.error_message(result) unless is_ok?(result)
     end
 
     def response(options)

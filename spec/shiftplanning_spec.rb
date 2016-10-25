@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Shift::Planning do
+describe ShiftPlanning do
   it 'has a version number' do
     expect(Shift::Planning::VERSION).not_to be nil
   end

@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'shift/planning/version'
+require 'shiftplanning/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "shift-planning"
-  spec.version       = Shift::Planning::VERSION
+  spec.version       = ShiftPlanning::VERSION
   spec.authors       = ["Morgan Miller"]
   spec.email         = ["m.miller722@gmail.com"]
 
@@ -30,4 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "httparty", "~>0.13.7"
+  spec.add_development_dependency "pry"
 end

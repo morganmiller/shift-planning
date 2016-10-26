@@ -7,7 +7,7 @@ A gem for interfacing with the [Shift Planning API](https://www.shiftplanning.co
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'shift-planning'
+gem 'shiftplanning'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install shift-planning
+    $ gem install shiftplanning
 
 ## Usage
 

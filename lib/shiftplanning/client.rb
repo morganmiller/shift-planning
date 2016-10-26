@@ -1,3 +1,5 @@
+require 'httparty'
+
 module ShiftPlanning
   class Client
     include HTTParty
@@ -35,6 +37,7 @@ module ShiftPlanning
     def request(method, api_module, data = {})
       result = response(request_options(method, api_module, data))
       raise ShiftPlanning::ResponseError.error_message(result) unless is_ok?(result)
+      result
     end
 
     def response(options)

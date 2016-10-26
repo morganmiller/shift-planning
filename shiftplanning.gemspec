@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = ShiftPlanning::VERSION
   spec.authors       = ["Morgan Miller"]
   spec.email         = ["m.miller722@gmail.com"]
-  spec.summary       = %q{A gem for interfacing with the Shift Planning API - changing for test}
+  spec.summary       = %q{A gem for interfacing with the Shift Planning API}
   spec.homepage      = ""
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or

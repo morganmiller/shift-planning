@@ -20,7 +20,6 @@ To ensure the latest version on master branch, execute:
 
 ## Usage
 
-TODO: Make better
 ```ruby
 
 #To initialize Client
